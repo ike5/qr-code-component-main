@@ -23,9 +23,32 @@
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
+
+      .body {
+        display: flex;
+        width: 90rem;
+        height: 50rem;
+        padding: 9.5rem 0rem 9.4375rem 0rem;
+        justify-content: center;
+        align-items: center;
+        background: var(--Light-Grey, #d5e1ef);
+      }
+      .card-body {
+        width: 20rem;
+        height: 31.0625rem;
+        flex-shrink: 0;
+
+        border-radius: 1.25rem;
+        background: var(--White, #fff);
+        box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.05);
+      }
     </style>
   </head>
   <body>
+    <div class="body">
+      <div class="card-body"></div>
+    </div>
+
     Improve your front-end skills by building projects Scan the QR code to visit
     Frontend Mentor and take your coding skills to the next level
 
