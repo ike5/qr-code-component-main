@@ -26,13 +26,23 @@
       }
 
       :root {
-        display: flex;
-        width: 90rem;
-        height: 50rem;
-        padding: 9.5rem 0rem 9.4375rem 0rem;
-        justify-content: center;
-        align-items: center;
         background: var(--Light-Grey, #d5e1ef);
+      }
+
+      .desktop {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .main-body {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
       }
 
       .card-body {
@@ -108,29 +118,35 @@
   </head>
 
   <body>
-    <div class="body">
-      <div class="card-body">
-        <img src="images/image-qr-code.png" alt="qr code" class="mask1" />
-        <div class="card-text-group">
-          <div class="card-title-text">
-            Improve your front-end skills by building projects
+    <div class="desktop">
+      <div class="main-body">
+        <div class="card-body">
+          <img src="images/image-qr-code.png" alt="qr code" class="mask1" />
+          <div class="card-text-group">
+            <div class="card-title-text">
+              Improve your front-end skills by building projects
+            </div>
+            <div class="card-body-text">
+              Scan the QR code to visit Frontend Mentor and take your coding
+              skills to the next level
+            </div>
           </div>
-          <div class="card-body-text">
-            Scan the QR code to visit Frontend Mentor and take your coding
-            skills to the next level
+        </div>
+
+        <div class="attribution2">
+          Improve your front-end skills by building projects Scan the QR code to
+          visit Frontend Mentor and take your coding skills to the next level
+
+          <div class="attribution">
+            Challenge by
+            <a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              >Frontend Mentor</a
+            >. Coded by <a href="https://ike5.github.io">Ike Maldonado</a>.
           </div>
         </div>
       </div>
-    </div>
-
-    Improve your front-end skills by building projects Scan the QR code to visit
-    Frontend Mentor and take your coding skills to the next level
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
     </div>
   </body>
 </html>
